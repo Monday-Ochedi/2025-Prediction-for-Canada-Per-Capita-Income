@@ -31,23 +31,23 @@ The Dataset used in this analysis is canada_per_capita_income.csv, which contain
 
 ### Plot Prediction
 
-`plt.figure(figsize=(10, 5))`
-
-`plt.gca().set_facecolor('lightgrey')`
-
-`plt.xlabel('year')`
-
-`plt.ylabel('per capita income (US$)')`
-
-`plt.scatter(df['year'],df['per capita income (US$)'], color = 'red', marker = '+')`
-
-`plt.plot(df['year'], reg.predict(df[['year']]), color = 'blue')`
-
-`plt.scatter(2025, reg.predict([[2025]]), color='purple', marker='o', label='Prediction (2025)')`
-
-`plt.title('2025 Prediction for Canada Per Capita Income')`
-
-`plt.legend()`
+    plt.figure(figsize=(10, 5))
+    
+    plt.gca().set_facecolor('lightgrey')
+    
+    plt.xlabel('year')
+    
+    plt.ylabel('per capita income (US$)')
+    
+    plt.scatter(df['year'],df['per capita income (US$)'], color = 'red', marker = '+')
+    
+    plt.plot(df['year'], reg.predict(df[['year']]), color = 'blue')
+    
+    plt.scatter(2025, reg.predict([[2025]]), color='purple', marker='o', label='Prediction (2025)')
+    
+    plt.title('2025 Prediction for Canada Per Capita Income')
+    
+    plt.legend()
 
 ### Data Visualization
 
